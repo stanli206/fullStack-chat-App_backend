@@ -16,10 +16,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://fullstack-chatapp-fe.netlify.app",
     credentials: true,
   })
-);
+); //http://localhost:5173
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
